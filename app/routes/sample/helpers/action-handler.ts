@@ -1,13 +1,5 @@
-import { unlink } from "fs/promises";
-import path from "path";
 import { deleteData, insertData, updateData } from "./services.server";
 import { validateSample } from "./validate-sample";
-// import { saveImage } from "./save-image";
-
-/**
- * Handles create, update, and delete operations for samples.
- * This is extracted for readability and testability.
- */
 export async function handleAction({
   actionType,
   id,
